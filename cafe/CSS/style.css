@@ -128,7 +128,7 @@ body {
 /*--about--*/
 
 .about-wrap {
-    width: 1000px;
+    max-width: 1000px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -165,12 +165,12 @@ body {
 /*--menu--*/
 
 .menu-wrap {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .menu-logo {
-    width: 15.1%;
+    width: 151px;
     margin: 0 auto;
 }
 
@@ -206,19 +206,19 @@ body {
 }
 
 .gellery-logo {
-    width: 15.1%;
+    width: 245px;
     margin: 0 auto;
 }
 
 /*--event--*/
 
 .event-wrap {
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .event-logo {
-    width: 17.3%;
+    width: 173px;
     margin: 0 auto;
 }
 
@@ -243,7 +243,7 @@ dd a {
 
 /*--acsess--*/
 .acsess-logo {
-    width: 15.1%;
+    width: 213px;
     margin: 0 auto;
 }
 
