@@ -132,31 +132,34 @@ body {
     padding: 0 10px;
 }
 
+.about-picture {
+    max-width: 50%;
+}
+
 .about-picture img {
     border-bottom-right-radius: 50px;
-    max-width: none;
-    margin-right: 87px;
 }
 
 .about img {
     width: 272px;
-    margin-top: 60px;
+    margin-top: 56px;
 }
 
 .concept {
     font-size: 44px;
     line-height: 1.38;
-    margin-top: 46px;
+    margin-top: 45px;
 }
 
 .about p {
     line-height: 1.85;
     font-size: 16px;
-    margin-top: 41px;
+    margin-top: 23px;
 }
 
 .about {
     margin: 0 0 105px 1.9%;
+    max-width: 40%;
 }
 
 /*--menu--*/
