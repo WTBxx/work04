@@ -56,6 +56,10 @@ body {
     background: #e8d9bf;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*--ヘッダー--*/
 
 #header-wrap {
@@ -145,12 +149,6 @@ body {
     margin-top: 56px;
 }
 
-.concept {
-    font-size: 44px;
-    line-height: 1.38;
-    margin-top: 45px;
-}
-
 .about p {
     line-height: 1.85;
     font-size: 16px;
@@ -160,6 +158,12 @@ body {
 .about {
     margin: 0 0 105px 1.9%;
     max-width: 40%;
+}
+
+.about .concept {
+    font-size: 44px;
+    line-height: 1.38;
+    margin-top: 45px;
 }
 
 /*--menu--*/
@@ -216,6 +220,7 @@ body {
 #event-wrap {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 
 .event-logo {
@@ -265,7 +270,8 @@ footer {
 .footer-wrap {
     max-width: 1000px;
     display: flex;
-    justify-content: center;
+    margin: 0 auto;
+    padding: 0 10px;
 }
 
 .footer-logo {
