@@ -132,7 +132,7 @@ html {
     max-width: 1000px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 0 auto 105px auto;
     padding: 0 10px;
 }
 
@@ -156,7 +156,7 @@ html {
 }
 
 .about {
-    margin: 0 0 105px 1.9%;
+    margin: 0 0 0 1.9%;
     max-width: 40%;
 }
 
