@@ -106,16 +106,17 @@ html {
 .main-wrap {
     text-align: center;
     padding: 0 10px;
+    margin-top: 100px;
 }
 
 .text1 {
     font-size: 30px;
     line-height: 0.7;
-    margin: 100px 0 55px 0;
+    margin-bottom: 55px;
 }
 
 .title {
-    font-size: 82px;
+    font-size: 38px;
     line-height: 1.17;
     font-weight: normal;
 }
@@ -126,16 +127,24 @@ html {
     margin: 50px 0 98px 0;
 }
 
+.text3 {
+    display: none;
+}
+
 /*--about--*/
 
 #about-wrap {
     max-width: 1000px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin: 0 auto 105px auto;
     padding: 0 10px;
 }
 
+.about_us1 {
+    display: none;
+}
 .about-picture {
     max-width: 50%;
 }
@@ -144,9 +153,8 @@ html {
     border-bottom-right-radius: 50px;
 }
 
-.about img {
+.about_us2 {
     width: 272px;
-    margin-top: 56px;
 }
 
 .about p {
@@ -156,7 +164,6 @@ html {
 }
 
 .about {
-    margin: 0 0 0 1.9%;
     max-width: 40%;
 }
 
@@ -197,6 +204,7 @@ html {
     color: #d30202;
     font-size: 38px;
     margin-top: -20px;
+    margin-left: 4%;
 }
 
 .menu-text {
@@ -215,11 +223,15 @@ html {
     margin: 0 auto;
 }
 
+.gallery_sp {
+    display: none;
+}
+
 /*--event--*/
 
 #event-wrap {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 68px auto 70px auto;
     padding: 0 10px;
 }
 
@@ -241,7 +253,7 @@ dl {
     background-color: #fff;
     border: #4f260b solid 3.68px;
     padding: 3.6% 16.2%;
-    margin: 25px 0 65px 0;
+    margin-top: 25px;
 }
 
 a dd {
@@ -300,4 +312,279 @@ footer {
     right: 30px;
     bottom: 30px;
     width: 125px;
+}
+
+.hamburger,
+.sp-nav {
+    display: none;
+}
+
+/*--スマホ版--*/
+@media screen and (max-width: 1100px) {
+    .header-nav {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        height: 33px;
+        z-index: 9999;
+    }
+    .hamburger span {
+        width: 33px;
+        height: 3px;
+        background: #fff;
+        display: block;
+        position: relative;
+        top: 10px;
+        transition: 0.3s;
+    }
+    .hamburger span::before,
+    .hamburger span::after {
+        content: "";
+        display: block;
+        background: #fff;
+        width: 33px;
+        height: 3px;
+        position: absolute;
+        transition: 0.3s;
+    }
+    .hamburger span::before {
+        bottom: 10px;
+    }
+    .hamburger span::after {
+        top: 10px;
+    }
+    .open span {
+        background: transparent;
+    }
+    .open span::before {
+        bottom: 0px;
+        transform: rotate(45deg);
+    }
+    .open span::after {
+        top: 0px;
+        transform: rotate(135deg);
+    }
+    .sp-nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .sp-nav ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sp-nav ul li {
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+        padding: 10px 0;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+            "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    }
+    .main-wrap {
+        padding: 0 2px;
+        margin-bottom: 50px;
+        margin-top: 40px;
+    }
+    .text1 {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+    .title {
+        font-size: 38px;
+        margin-bottom: 15px;
+    }
+    .text2 {
+        font-size: 16px;
+        line-height: 1.87;
+        margin: 23px 0 50px 0;
+    }
+}
+
+/*--767px以下--*/
+
+@media screen and (max-width: 767px) {
+    .title {
+        font-size: 9.86vw;
+        margin-bottom: 15px;
+    }
+    .text2 {
+        display: none;
+    }
+
+    .text3 {
+        display: block;
+        font-size: 16px;
+        line-height: 1.87;
+        margin-bottom: 50px;
+    }
+
+    .about img {
+        width: 160px;
+    }
+    .about .concept {
+        font-size: 36px;
+    }
+
+    /*--about-us--*/
+
+    #about-wrap {
+        display: block;
+        margin: 0 auto 44px auto;
+        padding: 0;
+    }
+    .about-picture {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .about {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .about_us2 {
+        display: none;
+    }
+    .about_us1 {
+        display: block;
+        width: 160px;
+        margin: 0 auto 12px auto;
+    }
+    .about-picture img {
+        border-bottom-right-radius: 0;
+    }
+    .about .concept {
+        font-size: 36px;
+        line-height: none;
+        margin-top: 32px;
+    }
+    .about p {
+        text-align: left;
+    }
+
+    /*--menu--*/
+
+    #menu-wrap {
+        margin-bottom: 75px;
+    }
+    .menu-logo {
+        width: 88px;
+    }
+    .menu-date {
+        display: block;
+        margin: 17px 4.69% 0 4.69%;
+    }
+    .menu {
+        width: 100%;
+    }
+    .menu img {
+        width: 100%;
+        text-align: center;
+    }
+    .menu-title {
+        color: #d30202;
+        font-size: 40px;
+        margin-bottom: 18px;
+    }
+    .menu-text {
+        font-size: 17px;
+        line-height: 1.58;
+        margin-bottom: 54px;
+    }
+
+    /*--gellery--*/
+
+    .gellery {
+        display: none;
+    }
+    .gallery_sp {
+        display: block;
+        margin: 15px 0 0 0;
+    }
+    .gellery-logo {
+        width: 142px;
+    }
+
+    /*--event--*/
+
+    #event-wrap {
+        max-width: 1000px;
+        margin: 30px 0 25px 0;
+        padding: 0 20px;
+    }
+    .event-logo {
+        width: 101px;
+        margin: 0 auto 15px auto;
+    }
+    .topic a {
+        display: block;
+        line-height: 1.95;
+        font-size: 16px;
+    }
+    dl {
+        align-items: center;
+        background-color: #fff;
+        border: #4f260b solid 3.68px;
+        padding: 3.6% 9.01%;
+    }
+    a dd {
+        margin-left: 0;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    /*--acsess--*/
+
+    .acsess-logo {
+        width: 124px;
+        margin-bottom: 10px;
+    }
+
+    #acsess-wrap iframe {
+        margin-top: 6px;
+        display: block;
+    }
+
+    /*--フッター--*/
+
+    .footer-wrap {
+        display: block;
+        padding: 0 20px;
+    }
+
+    .footer-logo {
+        width: 227px;
+        padding-top: 40px;
+        margin-top: 0;
+    }
+
+    .footer-text {
+        font-size: 18px;
+        margin-top: 27px;
+        line-height: 1.16;
+    }
+
+    .copyright {
+        font-size: 16px;
+        padding: 35px 0 30px 0;
+    }
+
+    /*--トップボタン--*/
+
+    .page_top_btn {
+        position: fixed;
+        right: 12px;
+        bottom: 205px;
+        width: 100px;
+    }
 }
