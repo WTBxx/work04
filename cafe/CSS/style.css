@@ -116,7 +116,7 @@ html {
 }
 
 .title {
-    font-size: 38px;
+    font-size: 82px;
     line-height: 1.17;
     font-weight: normal;
 }
@@ -248,7 +248,7 @@ html {
     font-size: 23px;
 }
 
-dl {
+.topic {
     align-items: center;
     background-color: #fff;
     border: #4f260b solid 3.68px;
@@ -256,7 +256,7 @@ dl {
     margin-top: 25px;
 }
 
-a dd {
+.topic a dd {
     text-decoration: #4f260b underline;
     margin-left: 53px;
 }
@@ -376,6 +376,7 @@ footer {
         width: 100%;
         height: 100vh;
         background: rgba(0, 0, 0, 0.5);
+        z-index: 1000;
     }
     .sp-nav ul {
         height: 100%;
@@ -409,13 +410,21 @@ footer {
         line-height: 1.87;
         margin: 23px 0 50px 0;
     }
+
+    .about .concept {
+        font-size: 35px;
+    }
 }
 
 /*--767px以下--*/
 
 @media screen and (max-width: 767px) {
+    .logo {
+        width: 187.5px;
+    }
+
     .title {
-        font-size: 9.86vw;
+        font-size: 32px;
         margin-bottom: 15px;
     }
     .text2 {
@@ -509,6 +518,8 @@ footer {
     .gallery_sp {
         display: block;
         margin: 15px 0 0 0;
+        width: 100%;
+        text-align: center;
     }
     .gellery-logo {
         width: 142px;
@@ -530,13 +541,13 @@ footer {
         line-height: 1.95;
         font-size: 16px;
     }
-    dl {
+    .topic {
         align-items: center;
         background-color: #fff;
         border: #4f260b solid 3.68px;
         padding: 3.6% 9.01%;
     }
-    a dd {
+    .topic a dd {
         margin-left: 0;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -553,6 +564,7 @@ footer {
     #acsess-wrap iframe {
         margin-top: 6px;
         display: block;
+        height: 191px;
     }
 
     /*--フッター--*/
@@ -571,7 +583,7 @@ footer {
     .footer-text {
         font-size: 18px;
         margin-top: 27px;
-        line-height: 1.16;
+        line-height: 1.72;
     }
 
     .copyright {
@@ -583,8 +595,6 @@ footer {
 
     .page_top_btn {
         position: fixed;
-        right: 12px;
-        bottom: 205px;
         width: 100px;
     }
 }
