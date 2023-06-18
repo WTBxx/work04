@@ -419,12 +419,16 @@ footer {
 /*--767px以下--*/
 
 @media screen and (max-width: 767px) {
+    .text1 {
+        font-size: 2.21vw;
+    }
+
     .logo {
         width: 187.5px;
     }
 
     .title {
-        font-size: 32px;
+        font-size: 4.17vw;
         margin-bottom: 15px;
     }
     .text2 {
@@ -433,7 +437,7 @@ footer {
 
     .text3 {
         display: block;
-        font-size: 16px;
+        font-size: 2.08vw;
         line-height: 1.87;
         margin-bottom: 50px;
     }
