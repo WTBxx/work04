@@ -69,6 +69,7 @@ html {
     left: 0;
     width: 100%;
     box-sizing: border-box;
+    z-index: 1000;
 }
 
 .logo {
@@ -96,6 +97,20 @@ html {
 
 .slider img {
     width: 100%;
+}
+
+/*--スライダー調整--*/
+
+.slick-dots {
+    bottom: 20px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #fff;
+}
+
+.slick-dots li button:before {
+    color: #fff;
 }
 
 /*--メインテキスト--*/
@@ -214,15 +229,14 @@ html {
     display: flex;
     margin: 25px 0 65px 0;
 }
-
 .gellery-logo {
     width: 245px;
     margin: 0 auto;
 }
 
-.gallery_sp {
+/*--.gallery_sp {
     display: none;
-}
+}--*/
 
 /*--event--*/
 
@@ -511,14 +525,19 @@ footer {
     /*--gellery--*/
 
     .gellery {
-        display: none;
+        top: 15px;
+        margin: 0 auto;
     }
-    .gallery_sp {
+    .gellery img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*--..gallery_sp {
         display: block;
         margin: 15px 0 0 0;
         width: 100%;
         text-align: center;
-    }
+    }--*/
     .gellery-logo {
         width: 142px;
     }
@@ -527,7 +546,7 @@ footer {
 
     #event-wrap {
         max-width: 1000px;
-        margin: 30px 0 25px 0;
+        margin: 60px 0 25px 0;
         padding: 0 20px;
     }
     .event-logo {
