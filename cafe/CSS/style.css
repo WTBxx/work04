@@ -238,6 +238,23 @@ html {
     display: none;
 }--*/
 
+/*--gelleryスライダー--*/
+.slick-slide {
+    height: auto !important;
+}
+.slick-next {
+    right: 0 !important;
+}
+.slick-prev {
+    left: 0 !important;
+}
+.slick-arrow {
+    z-index: 2 !important;
+}
+.lb-data .lb-number {
+    display: none !important;
+}
+
 /*--event--*/
 
 #event-wrap {
